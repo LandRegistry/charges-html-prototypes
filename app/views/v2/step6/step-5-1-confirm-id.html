@@ -1,0 +1,63 @@
+{{<layout-v2}}
+
+{{$pageTitle}}
+  GOV.UK prototyping kit
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+  <div class="inner-block">
+    {{>includes/alpha_banner}}
+
+    <h1 class="form-title heading-large">Confirmation of identity</h1>
+
+    <div class="text">
+      <p>
+        Land Registry relies partly on the steps that conveyancers take to verify
+        the identity of their clients. These checks reduce the risk of property fraud.
+      </p>
+      <p>
+        Where a person was not represented by a conveyancer, Land Registry
+        requires ‘evidence of identity’ in respect of that person.
+      </p>
+
+      <details>
+        <summary>What is evidence of identity?</summary>
+        <div>
+          <p>content</p>
+        </div>
+      </details>
+
+      <form action="step-5-2-declaration-id" method="get" class="form">
+        <h2 class="heading-medium">
+          Was any borrower on the application represented by a conveyancer?
+        </h2>
+        <div class="form-group">
+          <fieldset class="inline">
+            <label class="block-label" for="radio-inline-1">
+              <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+              Yes
+            </label>
+            <label class="block-label" for="radio-inline-2">
+              <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+              No
+            </label>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="button">Next</button>
+          <p>
+            <a href="step-2-case-list">Cancel</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+</main>
+
+{{/content}}
+
+{{/layout-v2}}

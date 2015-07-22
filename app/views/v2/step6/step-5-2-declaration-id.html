@@ -1,0 +1,78 @@
+{{<layout-v2}}
+
+{{$pageTitle}}
+  GOV.UK prototyping kit
+{{/pageTitle}}
+
+{{$content}}
+
+<link href="/public/lr-style-guide/lr-styleguide/css/styleguide.css" media="screen" rel="stylesheet" type="text/css" />
+
+<main id="content" role="main">
+  <div class="inner-block">
+    {{>includes/alpha_banner}}
+
+    <h1 class="form-title heading-large">Confirmation of identity</h1>
+
+
+      <div class="text">
+
+
+        <div class="service-notice expand-bottom font-xsmall">
+          <h2 class="heading-medium">Warning</h2>
+          <p>
+            If you dishonestly enter information or make a statement that you know
+            is, or might be, untrue or misleading, and intend by doing so to make
+            a gain for yourself or another person, or to cause loss or the risk of
+            loss to another person, you may commit the offence of fraud under
+            section 1 of the Fraud Act 2006, the maximum penalty for which is 10
+            years’ imprisonment or an unlimited fine, or both.
+          </p>
+          <p>
+            Failure to complete this form with proper care may result in a loss of
+            protection under the Land Registration Act 2002 if, as a result, a
+            mistake is made in the register.
+          </p>
+          <p>
+            Under section 66 of the Land Registration Act 2002 most documents
+            (including this form) kept by the registrar relating to an application
+            to the registrar or referred to in the register are open to public
+            inspection and copying. If you believe a document contains prejudicial
+            information, you may apply for that part of the document to be made
+            exempt using Form EX1, under rule 136 of the Land Registration Rules 2003.
+          </p>
+        </div>
+
+        <form action="step-6-mortgage-deed" method="get" class="form">
+          <div class="form-group">
+            <label class="block-label" for="checkbox-1">
+              <input id="checkbox-1" type="checkbox" name="checkbox-1" value="Yes">
+              I confirm that I am satisfied that sufficient steps have been taken
+              to verify the identity of <b>Peter James Smith</b> and that they are
+              the registered proprietor
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="block-label" for="checkbox-2">
+              <input id="checkbox-2" type="checkbox" name="checkbox-2" value="Yes">
+              I confirm that I am satisfied that sufficient steps have been taken
+              to verify the identity of <b>Sarah Jane Smith</b> and that they are
+              the registered proprietor
+            </label>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="button">Apply to register</button>
+            <p>
+              <a href="step-2-case-list">Cancel</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+  </div>
+
+</main>
+
+{{/content}}
+
+{{/layout-v2}}
